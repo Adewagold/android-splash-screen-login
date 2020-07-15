@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/twitterbluewhite"
+            android:layout_gravity="center"
+            android:contentDescription="TODO"></ImageView>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_to_fake_twitter"
+            android:layout_gravity="center"
+            android:textColor="#1DA1F2"
+            android:textStyle="bold"
+            android:layout_marginTop="35dp"
+
+            android:textSize="20sp"
+           ></TextView>
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_marginTop="35dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            android:hint="Username"
+            android:textColor="#1DA1F2"
+            android:textColorHint="#1DA1F2"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawablePadding="10sp"
+            android:textSize="20sp"
+            android:background="@drawable/edit"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_marginTop="15dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColor="#1DA1F2"
+            android:textColorHint="#1DA1F2"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="10sp"
+            android:textSize="20sp"
+            android:padding="20dp"
+            android:background="@drawable/edit"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget password?"
+            android:layout_gravity="right"
+            android:textColor="#1DA1F2"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="35dp"
+            android:textSize="15sp"
+            ></TextView>
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
